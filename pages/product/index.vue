@@ -1,5 +1,6 @@
 <script lang="ts" setup>
 import { products } from "~/composables/constants/products";
+
 const selectedCategory = ref("");
 const allProducts = computed(() => {
   if (selectedCategory.value) {
@@ -8,6 +9,7 @@ const allProducts = computed(() => {
   return products;
 });
 </script>
+
 <template>
   <section>
     <div class="container">
